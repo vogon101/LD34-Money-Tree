@@ -1,4 +1,4 @@
-# LD34 - MoneyTree
+MoneyTree
 Game for Ludum Dare 34
 Made in JS, make money by trading stocks on the stock market
 
