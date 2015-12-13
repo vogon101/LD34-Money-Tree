@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>MoneyTree | Intro</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="utils.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+    $(document).ready(function () {
+      if (getUrlVars().lose == "1") {
+        $(".lose").html("You lose...")
+        $(".playlink").html("PLAY AGAIN")
+      }
+      if (getUrlVars().lose == "2") {
+        $(".win").html("You Win...")
+        $(".playlink").html("PLAY AGAIN")
+      }
+    })
+    </script>
+  </head>
+  <body>
+    <center><h1>MoneyTree</h1><h2 class="lose"></h2><h2 class="win"></h2></center>
+    Welcome to Money Tree. A game all about growing your profits as large as you can. Buy stocks when
+    they're down and sell them to make the most money. Grow your net worth (the sum of your stocks and money)
+    and reach $1,000,000 to win. Borrow money from the bank to make even more money but be careful,
+    the bank will relentlessly take money to pay back your debt. If you end up with more than $100,000
+    of negative equity, you will be declared bankrupt.
+    <center><h2><a href="game.html" class="playlink">PLAY<a></h2></center>
+  </body>
+</html>

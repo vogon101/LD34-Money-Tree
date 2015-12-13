@@ -1,0 +1,89 @@
+<html>
+  <head>
+    <title>Money Tree | Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+    <script src = "data.js"></script>
+    <script src = "utils.js"></script>
+    <script src = "main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body onload="start()">
+    <div id="title">
+    <center><t>Money Tree</t></center><img src="graph.png"/>
+  </div>
+    <div class="top-info">
+      <marquee direction="right" loop="40" id="ticker" scrollamount=20><news id="news"></news></marquee>
+    </div><br/>
+      <center id="stats">
+        Money : $<m id="money">0.00</m> |
+        Net Worth : $<m id="netw">0.00</m>
+        <h3 id="error"></h3>
+      </center>
+
+    </div>
+    <div class="main">
+      <table class="stocks-table">
+        <thead>
+          <th>Stock</th>
+          <th>Up/Down</th>
+          <th>Buy Price ($)</th>
+          <th>Sell Price ($)</th>
+          <th>Owned</th>
+          <th>Buy</th>
+          <th>Sell</th>
+        </thead>
+        <tbody>
+
+
+        </tbody>
+      </table>
+    </div>
+    <div class="bank">
+      <table id="bank-table">
+        <thead>
+          <th>Credit Avaliable</th>
+          <th>Loan Remaining</th>
+          <th>Payment Per Tick</th>
+          <th>Repay</th>
+          <th>Borrow</th>
+          <th>Intrest</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="creditavaliable">$100,000.00</td>
+            <td id="loanremaining">$0.00</td>
+            <td id="paypertick">$0.00</td>
+            <td id="stock-buysell">
+              <a href='#' onclick='repay(10)'>10%</a>
+              <a href='#' onclick='repay(100)'>100%</a>
+            </td>
+            <td id="stock-buysell">
+              <a href='#' onclick='borrow(10)'>10%</a>
+              <a href='#' onclick='borrow(100)'>100%</a>
+            </td>
+            <td id="intrestrate">1.1%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="charts">
+      <div id="chartav" class="chart">
+        <h2>Market Tracker</h2>
+        <canvas id="chart-average" width="1000px" height="100px"></canvas>
+      </div>
+      <div id="chartnw" class="chart">
+        <h2>Your net worth</h2>
+        <canvas id="chart-networth" width="1000px" height="100px"></canvas>
+      </div>
+    </div>
+
+  </body>
+</html>

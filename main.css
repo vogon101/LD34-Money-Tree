@@ -1,0 +1,168 @@
+body {
+  font-family: monospace !important;
+  background-color: black;
+  color: white;
+}
+
+.top-info {
+  width: 100%;
+}
+
+#ticker>stock {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 200%;
+}
+
+#ticker>stock::after {
+  content: " | "
+}
+
+#ticker>stock::before {
+  content: " | "
+}
+
+stock.up, tr.up {
+  color: green;
+}
+
+stock.down, tr.down {
+  color: red;
+}
+
+stock.nochange, tr.nochange {
+  color: #FFCD00;
+}
+
+td#stock-buysell, td#stock-buysell>a {
+  color: black;
+}
+
+td#stock-buysell>a {
+  text-decoration: none;
+  background-color: #282C34;
+  color: #ffffff;
+  padding: 2px 6px 2px 6px;
+  margin: 0px 3px 0px 3px;
+  border-top: 1px solid #282C34;
+  border-right: 1px solid #282C34;
+  border-bottom: 1px solid #282C34;
+  border-left: 1px solid #282C34;
+}
+
+#ticker>news {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 200%;
+}
+
+sep {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.main {
+  width: 100%;
+  float: left;
+  margin-top: 0px;
+  padding-top: 0px;
+  border-top: 1px solid white !important;
+  border-bottom: 1px solid white !important;
+
+}
+
+.top-info {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  background-color:black;
+  display: block;
+}
+
+news {
+  color: orange;
+}
+
+.stocks-table {
+  width: 100%;
+}
+
+.stocks-table>tbody>tr>td {
+  text-align: center;
+}
+
+thead {
+  font-size: 130%
+}
+
+tr {
+  font-size: 120%
+}
+
+td {
+  border-bottom: 4px solid black !important;
+}
+
+#error {
+  color: red;
+}
+
+#stats {
+  font-size: 130%;
+  padding-top: 10px;
+}
+
+.bank {
+  width:100%;
+  border-bottom: 1px solid white !important;
+}
+
+t {
+  font-size: 300%;
+  display: inline;
+
+}
+
+#title {
+  border-bottom: 2px solid white !important;
+  height:50px;
+  width:100%;
+}
+
+#title>img {
+  float:right;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 58px;
+}
+
+.bank, #bank-table {
+  width: 100%;
+  text-align: center;
+}
+
+.chart {
+  width : 50%;
+  height: 30%;
+}
+
+#chartnw {
+    float:right;
+}7
+
+#chart-average, #chart-networth{
+  width : 45%;
+  height: 100%;
+}
+
+#chartav {
+  float: left;
+}
+
+.lose {
+  color: red;
+}
+
+.win {
+  color: green;
+}
