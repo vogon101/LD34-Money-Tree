@@ -61,7 +61,7 @@ function buy(quantity, index) {
   if (quantity == -1) {
     quantity = Math.floor(money/stocks[index].buy)
   }
-  if (stocks[index].buy * quantity > money) {
+  if (stocks[index].buy * quantity > money || money < 0) {
     $("#error").html("Not enough money")
   }
   else {
